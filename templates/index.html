@@ -1,0 +1,518 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>CarForYou</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="{% static 'assetsapp/logo/favicon.png' %}"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{% static 'assetsapp/css/linearicons.css' %}">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="{% static 'assetsapp/css/flaticon.css' %}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'assetsapp/css/animate.css' %}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static 'assetsapp/css/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assetsapp/css/owl.theme.default.min.css' %}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'assetsapp/css/bootstrap.min.css' %}">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{% static 'assetsapp/css/bootsnav.css' %}" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{% static 'assetsapp/css/style.css' %}">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{% static 'assetsapp/css/responsive.css' %}">
+        
+        
+
+    </head>
+	
+	<body>
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+				                <a class="navbar-brand" href="index">carvilla<span></span></a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class=" scroll active"><a href="index">home</a></li>
+				                    <li class="scroll"><a href="#service">service</a></li>
+				                    <li><a href="cars">featured cars</a></li>
+				                    <li><a href="cars">new cars</a></li>
+				                    <li><a href="login">Login</a></li>
+				                    <li><a href="register">Register</a></li>
+				                    <li><a href="admin">Admin</a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>get your desired car in resonable price</h2>
+					<p>
+						Carvilla is your one-stop destination for all things automotive, where quality meets affordability. We offer a wide range of cars, accessories, and services to					</p>
+					<button class="welcome-btn" onclick="window.location.href='cars'">View Cars</button>
+					<button class="welcome-btn" onclick="window.location.href='cars'">View Biike</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="model-search-content">
+							<div class="row">								
+								<form action="search">
+									<div class="col-md-offset-1 col-md-2 col-sm-12">	
+										<div class="single-model-search">
+											<h2>select year</h2>
+											<div class="model-select-icon">
+												<select name="year" class="form-control">
+													<option value="0">year</option><!-- /.option-->
+													<option>2022</option><!-- /.option-->
+													<option>2021</option><!-- /.option-->
+													<option>2020</option><!-- /.option-->
+													<option>2019</option><!-- /.option-->
+													<option>2018</option><!-- /.option-->
+													<option>2017</option><!-- /.option-->
+													<option>2016</option><!-- /.option-->
+													<option>2015</option><!-- /.option-->
+													<option>2014</option><!-- /.option-->
+													<option>2013</option><!-- /.option-->
+													<option>2012</option><!-- /.option-->
+													<option>2011</option><!-- /.option-->
+													<option>2010</option><!-- /.option-->
+
+												</select><!-- /.select-->
+											</div><!-- /.model-select-icon -->
+										</div>
+										<div class="single-model-search">
+											<h2>body style</h2>
+											<div class="model-select-icon">
+												<select name="style" class="form-control">
+													<option value="0">style</option><!-- /.option-->
+													<option>sedan</option><!-- /.option-->
+													<option>van</option><!-- /.option-->
+													<option>roadster</option><!-- /.option-->
+													<option>SUV</option><!-- /.option-->
+													<option>Sport</option><!-- /.option-->
+
+												</select><!-- /.select-->
+											</div><!-- /.model-select-icon -->
+										</div>
+									</div>
+									<div class="col-md-offset-1 col-md-2 col-sm-12">
+										<div class="single-model-search">
+											<h2>select make</h2>
+											<div class="model-select-icon">
+												<select name="make" class="form-control">
+
+													<option value="0">make</option><!-- /.option-->
+
+													<option>toyota</option><!-- /.option-->
+													<option>chevrolet</option><!-- /.option-->
+													<option>bmw</option><!-- /.option-->
+													<option>hyundai</option><!-- /.option-->
+													<option>honda</option><!-- /.option-->
+													<option>maruti</option><!-- /.option-->
+													<option>renault</option><!-- /.option-->
+													<option>kia</option><!-- /.option-->
+													<option>volksvagon</option><!-- /.option-->
+													<option>maecedes-benz.</option><!-- /.option-->
+													<option>Lamborgini</option><!-- /.option-->
+
+												</select><!-- /.select-->
+											</div><!-- /.model-select-icon -->
+										</div>
+										<div class="single-model-search">
+											<h2>car condition</h2>
+											<div class="model-select-icon">
+												<select name="condition" class="form-control">
+													<option value="0">condition</option><!-- /.option-->
+													<option>new</option><!-- /.option-->
+													<option>used</option><!-- /.option-->
+												</select><!-- /.select-->
+											</div><!-- /.model-select-icon -->
+										</div>
+									</div>
+									<div class="col-md-offset-1 col-md-2 col-sm-12">
+										<div class="single-model-search">
+											<h2>select model</h2>
+											<div class="model-select-icon">
+												<select name="model" class="form-control">
+
+													<option value="0">model</option><!-- /.option-->
+
+													<option value="kia-rio">kia-rio</option><!-- /.option-->
+
+													<option value="mitsubishi">mitsubishi</option><!-- /.option-->
+													<option value="ford">ford</option><!-- /.option-->
+
+												</select><!-- /.select-->
+											</div><!-- /.model-select-icon -->
+										</div>
+										<div class="single-model-search">
+											<h2>select price</h2>
+											<div class="model-select-icon">
+												<select name="price" class="form-control">
+
+													<option value="0">price</option><!-- /.option-->
+
+													<option value="100000">3 Lack</option><!-- /.option-->
+													<option value="200000">5 Lack</option><!-- /.option-->
+													<option value="300000">8 Lack</option><!-- /.option-->
+													<option value="400000">10 Lack</option><!-- /.option-->
+													<option value="500000">25 Lack</option><!-- /.option-->
+													<option value="600000">1 Crore</option><!-- /.option-->
+													<option value="600000">10 Crore</option><!-- /.option-->
+													<option value="all">All</option><!-- /.option-->
+
+												</select><!-- /.select-->
+											</div><!-- /.model-select-icon -->
+										</div>
+									</div>
+									<div class="col-md-2 col-sm-12">
+										<div class="single-model-search text-center">
+											<button type="submit" class="welcome-btn model-search-btn" onclick="window.location.href='#'">
+												search
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--service start -->
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car"></i>
+								</div>
+								<h2><a href="#">largest dealership <span> of</span> car</a></h2>
+								<p>
+									Welcome to the largest car dealership in town, where your dream car awaits. At our dealership, we're dedicated to helping you find the perfect vehicle that suits your needs and desires.								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-repair"></i>
+								</div>
+								<h2><a href="#">unlimited repair warrenty</a></h2>
+								<p>
+
+									Introducing our Unlimited Repair Warranty, where your peace of mind is our priority. With this warranty, we've got you covered, ensuring worry-free ownership of your vehicle.								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-1"></i>
+								</div>
+								<h2><a href="#">insurence support</a></h2>
+								<p>
+									Discover the safety net you've been searching for with our Insurance Support services. We're here to guide and protect you through the complexities of insurance, ensuring you have the coverage you need.								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+
+		<!--new-cars start -->
+		<section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>checkout <span>the</span> latest cars</p>
+					<h2>newest cars</h2>
+				</div><!--/.section-header-->
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="{% static 'assetsapp/images/new-cars-model/ncm1.png' %}" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">chevrolet camaro <span> za100</span></a></h2>
+											<p>
+												Introducing the Chevrolet Camaro ZA100: where power meets precision, delivering an exhilarating driving experience like no other. Get ready to unleash the thrill of the road in style with this remarkable sports car.											
+											</p>
+											<button class="welcome-btn new-cars-btn" onclick="window.location.href='cars'">
+												View All New Cars
+											</button>
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<!--/.new-cars-item-->
+					</div><!--/#new-cars-carousel-->
+				</div><!--/.new-cars-content-->
+			</div><!--/.container-->
+
+		</section><!--/.new-cars-->
+		<!--new-cars end -->
+
+		<!--featured-cars start -->
+		<section id="featured-cars" class="featured-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>checkout <span>the</span> featured cars</p>
+					<h2>featured cars</h2>
+				</div><!--/.section-header-->
+				<div class="featured-cars-content">
+					<div class="row">
+						{% for i in carlis %}
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="{{i.8}}">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											year: {{i.1}}
+											<span class="featured-mi-span"> Make : {{i.2}}</span> 
+											<span class="featured-hp-span"> Style : {{i.3}}</span>
+											Condition : {{i.4}}
+											
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="cars?id={{i.0}}">{{i.2}} {{i.5}}</a></h2>
+									<h3>Rs.{{i.6}}</h3>
+									<p> 
+										{{i.2}} {{i.5}} manufactured in {{i.1}}. A {{i.3}} style vehicle with a very low price from {{i.6}}
+									</p>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.featured-cars-->
+		<!--featured-cars end -->
+
+		<!--brand strat --
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="owl-carousel owl-theme brand-item">
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'assetsapp/images/brand/br1.png' %}" alt="brand-image" />
+							</a>
+						</div>--/.item--
+					</div>--/.owl-carousel--
+				</div>--/.clients-area--
+
+			</div>--/.container--
+
+		</section>
+		--/brand-->
+		<!--brand end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog"></section><!--/.blog-->
+		<!--blog end -->
+
+		<!--contact start-->
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">carvilla</a>
+								</div>
+								<p>
+									Welcome to Carvilla, where your car dreams become a reality. We are passionate about automobiles and committed to providing you with top-notch products and services.								</p>
+								</p>
+								<div class="footer-contact">
+									<p>aravindh.2002@srit.org</p>
+									<p>+91-6379676494</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>about devloon</h2>
+								<ul>
+									<li><a href="#">about us</a></li>
+									<li><a href="#">career</a></li>
+									<li><a href="#">terms <span> of service</span></a></li>
+									<li><a href="#">privacy policy</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>top brands</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+										<ul>
+											<li><a href="#">BMW</a></li>
+											<li><a href="#">lamborghini</a></li>
+											<li><a href="#">camaro</a></li>
+											<li><a href="#">audi</a></li>
+											<li><a href="#">infiniti</a></li>
+											<li><a href="#">nissan</a></li>
+										</ul>
+									</div>
+									<div class="col-md-5 col-xs-6">
+										<ul>
+											<li><a href="#">ferrari</a></li>
+											<li><a href="#">porsche</a></li>
+											<li><a href="#">land rover</a></li>
+											<li><a href="#">aston martin</a></li>
+											<li><a href="#">mersedes</a></li>
+											<li><a href="#">opel</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>news letter</h2>
+								<div class="footer-newsletter">
+									<p>
+										Subscribe to get latest news  update and informations
+									</p>
+								</div>
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Add Email">
+									</div><!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-arrow-right"></i></span>
+									</div><!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; copyright.designed and developed by <a href="https://www.themesine.com/">Batch-18</a>.
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>	
+							</div>
+						</div>
+					</div>
+				</div><!--/.footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="{% static 'assetsapp/js/jquery.js' %}"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="{% static 'assetsapp/js/bootstrap.min.js' %}"></script>
+		
+		<!-- bootsnav js -->
+		<script src="{% static 'assetsapp/js/bootsnav.js' %}"></script>
+
+		<!--owl.carousel.js-->
+        <script src="{% static 'assetsapp/js/owl.carousel.min.js' %}"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="{% static 'assetsapp/js/custom.js' %}"></script>
+        
+    </body>
+	
+</html>
